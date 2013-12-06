@@ -151,19 +151,23 @@ body {
 	    color: #fff;
 	    display: inline-block;
 	}
-		.brand h1 {
+		.brand .title {
 		    margin: 0;
 		    padding: 0;
 		    font-size: 48px;
 		    font-family: "HelveticaNeueLTPro-Bd", "Helvetica Neue LT Pro Bold", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue LT Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		    color: #fff;
 		    font-weight: 600;
 		    font-stretch: normal; /* default value. No font stretching */
 		    line-height: 1em;
 		}
-		.brand p {
-		    color: #888;
+		.brand .title a {
+		    color: #fff;
+		}
+		.brand .tagline {
 		    margin-bottom: 22px;
+		}
+		.brand .tagline a {
+		    color: #888;
 		}
 
 	/* Search form */
