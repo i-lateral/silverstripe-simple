@@ -457,23 +457,30 @@ body h1 span.amp {
 	    color: #bbb;
 	}
 	.footer .primary,
+	.footer .socialnav,
 	.footer .primary ul {
 	    display: inline;
 	    margin: 0;
 	    padding: 0;
 	}
-		.footer .primary li {
+		.footer .primary li,
+		.footer .socialnav li {
 		    display: inline;
-		}
+		}	
+	    .footer .socialnav li {
+	        padding-left: 5px;
+	    }
 	.ie6 .footer .primary li,
-	.ie7 .footer .primary li { /* this is a bugfix for ie6/7 */
+	.ie7 .footer .primary li,
+	.ie6 .footer .socialnav li,
+	.ie7 .footer .socialnav li { /* this is a bugfix for ie6/7 */
 	    display: inline;
 	    zoom: 1;
 	    margin-right: 10px;
 	}
 	.footer .primary li:after { /* adds '/' to separate the footer navigation items */
 	    padding: 0 3px 0 5px;
-	    content: '/';
+	    content: '|';
 	    color: #999;
 	}
 	.footer .primary li:last-child:after {
