@@ -38,6 +38,7 @@ body{margin:0;background-color:#fff;min-width:240px}
 .header .primary li a{color:#777;font-size:15px;font-weight:bold}
 .header .primary li a:hover,.header .primary li.section a,.header .primary li.current a{color:#fff}
 .header .primary li.section:after,.header .primary li.current:after{content:'}';display:block;position:absolute;left:50%;margin-left:-7px;bottom:-7px;font-family:'WebSymbolsRegular';font-size:30px;color:#fff;text-align:center;line-height:20px}
+.main .secondary ul{margin-left:0;padding-left:0}
 .main .secondary li{position:relative}
 .main .secondary li a{font-size:.9em;color:#777;text-transform:uppercase}
 .main .secondary li a .arrow{color:#000;padding-right:5px;display:block;font-size:15px;line-height:20px;position:absolute;left:2px;top:7px;transition:.2s}
