@@ -1,9 +1,10 @@
 <% include SideBar %>
-<div class="content-container unit size3of4 lastUnit">
-	<article>
-		<h1>$Title</h1>
-		<div class="content">$Content</div>
-	</article>
-		$Form
-		$PageComments
+
+<div class="content-container <% if $Menu(2) %>unit-75<% end_if %>">
+    <article>
+        <h1>$Title</h1>
+        <div class="content">$Content</div>
+    </article>
+        $Form
+        $PageComments
 </div>

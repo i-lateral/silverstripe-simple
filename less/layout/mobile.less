@@ -1,0 +1,144 @@
+/* DEVICE & RESPONSIVE LAYOUT
+--------------------------------------- */
+@media only screen and (max-width: 767px) {
+    #media-query-trigger {
+        visibility: visible;
+    }
+
+    .inner {
+        padding: 0 20px;
+    }
+
+    /* Navigation
+    --------------------------------------- */
+    .header {
+        padding: 0px;
+    }
+        .header .primary .nav-open-button { /* styling and positioning of the nav toggle button */
+            z-index: 100;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 20px;
+            top: 35px;
+            display: block;
+            cursor: pointer;
+            font-family: 'WebSymbolsRegular';
+            font-size: 20px;
+            color: @colorWhite;
+        }
+        .header .primary ul {
+            z-index: 10;
+            position: relative;
+            display: none; /* initially hiding the navigation */
+            float: left;
+            margin: 0;
+            padding: 0;
+            white-space: normal;
+            width: 100%;
+        }
+            .header .primary ul li {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                float: none; /* displays list items vertically */
+                background: none;
+                position: relative;
+                text-shadow: 0 1px @colorWhite;
+            }
+            .header .primary ul li:after { /* creates the arrow for the primary nav links */
+                content: '\003e';
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 0px;
+                font-family: 'WebSymbolsRegular';
+                font-size: 14px;
+                color: @colorBlack;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 38px;
+            }
+            .header .primary ul li a,
+            .header .primary ul li.current a,
+            .header .primary ul li.section a { /* styling the  top level nav links */
+                padding: 10px 0 10px 22px;
+                font-weight: bold;
+                border-bottom: 1px solid @colorGray;
+                color: @colorBlack;
+                background: @colorGrayLight;
+            }
+            .header .primary ul li.current a,
+            .header .primary ul li.section a {
+                background: @colorGray; /* makes background on current top level page slightly darker */
+            }
+            .header .primary ul li a:hover {
+                color: inherit;
+            }
+            .header .primary li.section:after,
+            .header .primary li.current:after {
+                display: none; /* hides the link arrow on current top level page */
+            }
+            .header nav.primary ul ul li {
+                padding: 0;
+            }
+
+    /* Search Form */
+    .search-bar { /* adds new styling to mobile search bar */
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        display: none; /* hides searchbar initially */
+        padding: 20px 0;
+        margin: 0;
+        background-color: #E7E7E7;
+    }
+    .search-dropdown-icon { /* styling for search toggle button */
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 60px;
+        top: 34px;
+        font-family: 'WebSymbolsRegular';
+        font-size: 20px;
+        color: #ededed;
+        text-align: center;
+        line-height: 20px;
+    }
+    .search-bar form {
+        margin: 0;
+        width: 100%;
+    }
+        .search-bar form fieldset {
+            padding: 0 18px;
+            left: 0;
+            right: 0;
+            position: relative;
+        }
+    .search-bar div.field {
+        margin-bottom: 0;
+    }
+    .search-bar form input.text {
+        width: 89%; /* makes search input full width - allowing for space either side */
+        max-width: 89%;
+        padding: 8px 10% 8px 1%;
+        text-indent: 15px;
+        position: relative;
+        display: block;
+        right: 0;
+        left: 0;
+        border: 1px solid #e5e5e5;
+        background: #fff;
+        font-size: 17px;
+        -moz-border-radius: 20px; /* increase border radius due to increased padding */
+        border-radius: 20px;
+    }
+    .search-bar form input.action {
+        right: 5%;
+        top: 2px;
+        font-size: 18px;
+    }
+}

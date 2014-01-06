@@ -8,6 +8,14 @@
         {
             "name": "Sara Tušar (Innovaif)",
             "homepage": "http://www.saratusar.com"
+        },
+        {
+            "name": "Morven Lewis-Everley (psycho_mo)",
+            "homepage": "http://www.i-lateral.com"
+        },
+        {
+            "name": "Mark Anderson",
+            "homepage": "http://www.i-lateral.com"
         }
     ],
     "require": {

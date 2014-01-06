@@ -1,0 +1,314 @@
+/* MAIN LAYOUT
+--------------------------------------- */
+body {
+    margin: 0;
+    background-color: @colorWhite;
+    min-width: 240px;
+}
+    .ie7 body,
+    .ie8 body {
+        min-width: 860px; /* media queries are not supported in ie7/8 without a polyfill */
+    }
+    .main {
+        background: @colorWhite;
+        padding: 40px 0 60px;
+        min-height: 300px;
+    }
+    .inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    .ie6 .inner {
+        width: 960px;
+    }
+
+
+/* HEADER
+--------------------------------------- */
+.header {
+    background: @colorBlack;
+}
+    .header .inner {
+        padding-top: 2em;
+        position: relative;
+        min-height: 7em;
+    }
+    #media-query-trigger {
+        display: none;
+        visibility: hidden;
+    }
+
+
+/* Brand
+--------------------------------------- */
+    .header .brand {}
+        .header .brand a {
+            text-decoration: none;
+        }
+        .header .brand .title {
+            margin: 0;
+            padding: 0;
+            font-size: 3.5em;
+            line-height: 1em;
+        }
+            .header .brand .title a {
+                color: @colorWhite;
+            }
+        .header .brand .tagline {
+            font-size: 1.25em;
+        }
+            .header .brand .tagline a {
+                color: @colorGray;
+            }
+
+
+/* Search form
+--------------------------------------- */
+    .search-bar {
+        position: absolute;
+        right: 13px;
+        top: 12px;
+    }
+        .search-bar .field {
+            margin: 0;
+            padding: 0;
+        }
+        .search-bar form input.text {
+            width: 155px;
+            padding: 5px 34px 5px 15px;
+            color: #888;
+            margin: 0;
+            border: none;
+            border-radius: 14px;
+            background: @colorWhite;
+        }
+
+        .search-bar form input.action { /* positions the search button icon over the top of the search input */
+            font-size: 14px;
+            position: absolute;
+            right: 5px;
+            top: 0;
+            cursor: pointer;
+            border: none;
+            padding: 5px;
+            background: none;
+            font-family: 'WebSymbolsRegular';
+            color: @colorGrayDark;
+            border-radius: 0;
+            margin: 0;
+        }
+        .search-bar form input.active,
+        .search-bar form input.action:hover {
+            color: @colorBlack;
+        }
+        .search-bar form input:focus,
+        .header textarea:focus {
+            outline: none; /* removes default browser outlining on focus */
+        }
+        .search-dropdown-icon {
+            display: none; /* hides search-dropdown-icon when site is at full width - media queries set it to display:block when at mobile/tablet width */
+        }
+
+
+
+/* NAVIGATION
+--------------------------------------- */
+
+    /* Primary */
+    .header .nav-open-button {
+        display: none;
+    }
+    .header .primary ul {
+        position:absolute;
+        bottom:0;
+        right:0;
+    }
+    .header .primary li {
+        padding-bottom: 14px;
+        position: relative;
+        white-space: nowrap;
+    }
+    .header .primary li a {
+        color: @colorGray;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .header .primary li a:hover,
+    .header .primary li.section a,
+    .header .primary li.current a {
+        color: @colorWhite;
+    }
+    .header .primary li.section:after,
+    .header .primary li.current:after {
+        content: '}'; /* adds triangle beneath current nav item ('}' is renders as a triangle when WebSymbolsRegular is set as the font) */
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -7px;
+        bottom: -7px;
+        font-family: 'WebSymbolsRegular';
+        font-size: 30px;
+        color: @colorWhite;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    /* Secondary */
+    .main .secondary {}
+        .main .secondary li {
+            position: relative;
+        }
+            .main .secondary li a {
+                font-size: 0.9em;
+                color: @colorGray;
+                text-transform: uppercase;
+            }
+            .main .secondary li a .arrow {
+                color: @colorBlack;
+                padding-right: 5px;
+                display: block;
+                font-size: 15px;
+                line-height: 20px;
+                position: absolute;
+                left: 2px;
+                top: 7px;
+                transition: 0.2s;
+            }
+            .main .secondary li a:hover .arrow {
+                left: 6px;
+            }
+        .main .secondary li a .text {
+            padding-left: 28px;
+            display: block;
+            color: inherit;
+        }
+        .main .secondary li.current a.current,
+        .main .secondary li.section,
+        .main .secondary li.current {
+            background-color: @colorGrayLight;
+        }
+
+
+        /* Secondary navigation 2-5 levels deep */
+        .main .secondary ul ul {
+            display: none;
+        }
+        .secondary ul li.current ul,
+        .secondary ul li.section ul { /* Only show child pages from selected parent */
+            display: block;
+        }
+        .secondary li.current ul ul {
+            display: none;
+        }
+        .main .secondary ul ul li a { padding-left: 10px; } /* Indent all sidebar navigation levels*/
+            .main .secondary ul ul li a .arrow { left: 12px; }
+            .main .secondary ul ul li a:hover .arrow { left: 16px; }
+
+        .main .secondary ul ul ul li a { padding-left: 20px; }
+            .main .secondary ul ul ul li a .arrow { left: 22px; }
+            .main .secondary ul ul ul li a:hover .arrow { left: 26px; }
+
+        .main .secondary ul ul ul ul li a { padding-left: 30px; }
+            .main .secondary ul ul ul ul li a .arrow { left: 32px; }
+            .main .secondary ul ul ul ul li a:hover .arrow { left: 36px; }
+
+        .main .secondary ul ul ul ul ul li a { padding-left: 40px; }
+            .main .secondary ul ul ul ul ul li a .arrow { left: 32px; }
+            .main .secondary ul ul ul ul ul li a:hover .arrow { left: 36px; }
+
+
+/* FOOTER
+--------------------------------------- */
+.footer {
+    color: @colorGray;
+    background: @colorGrayLight;
+    padding: 2em 0;
+    font-size: 0.75em;
+}
+    .footer a {
+        color: @colorGray;
+    }
+    .footer a:hover {
+        color: @colorBlack;
+    }
+    .footer .socialnav {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+        .footer .socialnav li {
+            display: inline;
+        }
+        .footer .socialnav a {
+            text-decoration: none;
+        }
+    .footer .primary .nav-open-button {
+        display: none; /* the footer includes the primary nav include - this makes sure the nav open close button doesn't show up */
+    }
+
+/* PAGE SPECIFIC LAYOUT
+--------------------------------------- */
+
+/* Homepage
+--------------------------------------- */
+.HomePage {}
+    .HomePage h1 {
+        display: none;
+    }
+
+/* Search Results
+--------------------------------------- */
+.searchResults h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.searchResults p.searchQuery {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.searchResults ul#SearchResults {
+    padding: 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin:0;
+}
+    .searchResults ul#SearchResults li {
+        border-top: 1px solid #e5e5e5;
+        padding: 20px 0;
+        list-style-type: none;
+    }
+    .searchResults ul#SearchResults p {
+        margin-bottom: 10px;
+    }
+    .searchResults #PageNumbers a {
+        padding: 0 5px;
+    }
+    .searchResults #PageNumbers .pagination {
+        border-bottom: 1px solid #e5e5e5;
+        padding: 20px 0;
+        display:table; /* displays the pagination as a table so that elements stay inline and the middle column adjusts its size to accomodate and the right arrow stays to the right */
+        width:100%;
+    }
+    .searchResults #PageNumbers .pagination span{
+        display:table-cell; /* each element in the pagination div displays as a table cell */
+    }
+    .searchResults #PageNumbers p {
+        text-align: center;
+        padding:20px 0;
+    }
+    .searchResults #PageNumbers .next,
+    .searchResults #PageNumbers .prev {
+        font-size: 14px;
+        padding: 0 20px;
+        display:table-cell; /* each element in the pagination div displays as a table cell */
+        vertical-align: middle;
+        border-bottom:0 !important;
+    }
+    .searchResults #PageNumbers .next {
+        margin-left: 15px;
+    }
+    .searchResults #PageNumbers .prev {
+        margin-right: 15px;
+    }
