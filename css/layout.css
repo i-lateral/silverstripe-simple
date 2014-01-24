@@ -8,9 +8,11 @@
 .forms input[type="text"],.forms input[type="password"],.forms input[type="email"],.forms input[type="url"],.forms input[type="phone"],.forms input[type="tel"],.forms input[type="number"],.forms input[type="datetime"],.forms input[type="date"],.forms input[type="search"],.forms input[type="range"],.forms input[type="file"],.forms input[type="datetime-local"],.forms textarea,.forms select,.forms button{width:99.25%}
 .forms-inline input[type="text"],.forms-inline input[type="password"],.forms-inline input[type="email"],.forms-inline input[type="url"],.forms-inline input[type="phone"],.forms-inline input[type="tel"],.forms-inline input[type="number"],.forms-inline input[type="datetime"],.forms-inline input[type="date"],.forms-inline input[type="search"],.forms-inline input[type="range"],.forms-inline input[type="file"],.forms-inline input[type="datetime-local"],.forms-inline textarea,.forms-inline select,.forms-inline button,.forms-inline-list input[type="text"],.forms-inline-list input[type="password"],.forms-inline-list input[type="email"],.forms-inline-list input[type="url"],.forms-inline-list input[type="phone"],.forms-inline-list input[type="tel"],.forms-inline-list input[type="number"],.forms-inline-list input[type="datetime"],.forms-inline-list input[type="date"],.forms-inline-list input[type="search"],.forms-inline-list input[type="range"],.forms-inline-list input[type="file"],.forms-inline-list input[type="datetime-local"],.forms-inline-list textarea,.forms-inline-list select,.forms-inline-list button{width:auto}
 .forms .field input.checkbox{top:2px}
+.forms .Actions{text-align:right}
 .forms .optionset ul{list-style:none;margin-left:0}
 .forms .optionset ul label{display:inline}
-.forms-columnar .field{position:relative;padding-left:170px}
+.forms-columnar .field{position:relative;padding-left:130px}
+.forms-columnar .field label{width:120px}
 .forms-columnar .field.nolabel{padding-left:0}
 .forms-columnar .checkboxset,.forms-columnar .optionset{margin-bottom:.75em}
 .forms-columnar .checkboxset li,.forms-columnar .optionset li{clear:both}
