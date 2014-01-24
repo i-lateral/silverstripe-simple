@@ -12,9 +12,10 @@
 .forms .optionset ul label{display:inline}
 .forms-columnar .field{position:relative;padding-left:170px}
 .forms-columnar .field.nolabel{padding-left:0}
+.forms-columnar .checkboxset,.forms-columnar .optionset{margin-bottom:.75em}
 .forms-columnar .checkboxset li,.forms-columnar .optionset li{clear:both}
-.forms-columnar label.right,.forms-columnar .checkboxset li label,.forms-columnar .optionset li label{float:left;margin-left:1em;text-align:left;position:static}
-.forms-columnar .checkbox input,.forms-columnar .checkboxset input,.forms-columnar .optionset input{float:left;margin-top:.25em}
+.forms-columnar label.right,.forms-columnar .checkboxset li label,.forms-columnar .optionset li label{float:left;margin-left:1em;line-height:1m;width:auto;text-align:left;position:static}
+.forms-columnar .checkbox input,.forms-columnar .checkboxset input,.forms-columnar .optionset input{float:left;margin-top:.4em}
 body{margin:0;background-color:#fff;min-width:240px}
 .ie7 body,.ie8 body{min-width:860px;}
 .main{background:#fff;padding:40px 0 60px;min-height:300px}
