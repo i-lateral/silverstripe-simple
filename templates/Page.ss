@@ -57,6 +57,8 @@
 
         <div class="main clearfix units-row" data-role="main">
             <div class="inner typography">
+                $FlashMessage
+
                 $Layout
             </div>
         </div>
