@@ -18,8 +18,17 @@
 
         $MetaTags(false)
 
-        <link rel="shortcut icon" href="{$ThemeDir}/images/favicon.ico" />
-        <link rel="apple-touch-icon" href="{$ThemeDir}/images/touch-icon.png" />
+        <link rel="icon" sizes="16x16" href="{$ThemeDir}/images/icon-16.png" />
+        <link rel="icon" sizes="32x32" href="{$ThemeDir}/images/icon-32.png" />
+        <link rel="icon" sizes="48x48" href="{$ThemeDir}/images/icon-48.png" />
+        <link rel="icon" sizes="64x64" href="{$ThemeDir}/images/icon-64.png" />
+        <link rel="icon" sizes="128x128" href="{$ThemeDir}/images/icon-128.png" />
+        <link rel="icon" sizes="196x196" href="{$ThemeDir}/images/icon-196.png" />
+
+        <link rel="apple-touch-icon" href="{$ThemeDir}/images/icon-60.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="{$ThemeDir}/images/icon-76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="{$ThemeDir}/images/icon-120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="{$ThemeDir}/images/icon-152.png">
 
         <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
