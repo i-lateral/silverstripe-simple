@@ -34,7 +34,6 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-        <% require themedCSS('kube') %>
         <% require themedCSS('typography') %>
         <% require themedCSS('layout') %>
 

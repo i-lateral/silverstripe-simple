@@ -1,6 +1,5 @@
 /**
  * This support file is used to style the WYSIWYG editor in the CMS
  */
-@import "kube.css?2";
 @import "typography.css?2";
 body.mceContentBody{font-size:13px;}
