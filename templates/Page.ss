@@ -65,7 +65,7 @@
 
         <div class="main clearfix units-row" data-role="main">
             <div class="inner typography">
-                $FlashMessage
+                $SessionMessage
 
                 $Layout
             </div>
