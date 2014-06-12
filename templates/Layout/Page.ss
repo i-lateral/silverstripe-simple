@@ -4,6 +4,7 @@
     <article>
         <h1>$Title</h1>
         <div class="content">$Content</div>
+        $CalendarWidget
     </article>
         $Form
         $PageComments

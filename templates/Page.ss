@@ -59,24 +59,26 @@
     </head>
 
     <body class="$ClassName"<% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+        $SSCompactNavigator
 
-    <div class="wrapper">
-        <% include Header %>
+        <div class="wrapper">
 
-        <div class="main clearfix units-row" data-role="main">
-            <div class="inner typography">
-                $SessionMessage
+            <% include Header %>
 
-                $Layout
+            <div class="main clearfix units-row" data-role="main">
+                <div class="inner typography">
+                    $SessionMessage
+
+                    $Layout
+                </div>
             </div>
+
+            <% include Footer %>
+
         </div>
 
-        <% include Footer %>
-    </div>
-
-    <% require javascript('framework/thirdparty/jquery/jquery.js') %>
-    <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
-    <script type="text/javascript" src="{$ThemeDir}/javascript/script.js"></script>
+        <% require javascript('framework/thirdparty/jquery/jquery.js') %>
+        <% require javascript('themes/simple/javascript/script.js') %>
 
     </body>
 </html>
