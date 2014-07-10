@@ -58,7 +58,7 @@
         <% end_with %>
     </head>
 
-    <body class="$ClassName"<% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+    <body class="$ClassName"<% if $i18nScriptDirection %> dir="$i18nScriptDirection"<% end_if %>>
         $SSCompactNavigator
 
         <div class="wrapper">
