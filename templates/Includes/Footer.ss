@@ -7,7 +7,7 @@
             </div>
 
             <div class="unit-30">
-                $SocialNav
+                $SocialNav.Rendered
             </div>
         </div>
     </div>
